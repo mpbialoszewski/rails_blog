@@ -5,4 +5,8 @@ Rails.application.routes.draw do
 root 'posts#index'
 
 get 'about' => 'pages#about'
+
+resources :posts
+#This explains how redirect method GET works in RoR
+ # get 'contact' => 'pages#about'
 end
