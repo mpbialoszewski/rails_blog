@@ -1,12 +1,12 @@
 <h1>Add Post</h1>
-<%= form_for :post, url: posts_path do |f| %>
+<%= form_for :post, url: posts_path(@post), method: :patch do |f| %>
     <% if @post.errors.any? %>
         <% @post.errors.full_messages.each do |msg| %>
         <div class="alert alert-danger"><%= msg %>
         </div>
     <% end %>
 <% end %>
-
+<!-- ended at 43:09-->
 <p>
     <%= f.label :title %><br>
     <%= f.text_field(:title, {:class => 'form-control'}) %>

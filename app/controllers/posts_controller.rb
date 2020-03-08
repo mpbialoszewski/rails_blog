@@ -9,7 +9,7 @@ def show
 end
 
 def new
-
+    @post = Post.new
 end
 
 
@@ -21,6 +21,10 @@ def create
     else 
         render'new'
     end
+end
+
+def edit 
+    @post = Post.find(params[:id])
 end
 
 private def post_params
