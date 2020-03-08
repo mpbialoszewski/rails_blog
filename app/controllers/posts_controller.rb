@@ -16,8 +16,11 @@ end
 def create
     @post = Post.new(post_params)
 
-    @post.save
+    if@post.save
     redirect_to @post
+    else 
+        render'new'
+    end
 end
 
 private def post_params
