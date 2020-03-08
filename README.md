@@ -1,4 +1,8 @@
-# README
+# Ruby on Rails - first steps project
+
+Here I am learning and documenting things I've learnt about RoR.
+
+-----------------------------------------------------------------------------
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
